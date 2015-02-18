@@ -419,11 +419,11 @@ function formatInfZero(numberFormat){
 		header('Location: index.php');
 	}
 
-	/*$connectSQL = mysql_connect('fdb4.freehostingeu.com','1563171_gl','glproject2013') or die ("erreur de connexion");
+	/*$connectSQL = mysql_connect('...','...','...') or die ("erreur de connexion");
 	mysql_select_db('1563171_gl',$connectSQL) or die ("erreur de connexion base");*/
 	
-	$connectSQL = mysql_connect('mysql.frogcp.com', 'u993568510_user', 'glproject') or die ("erreur de connexion");
-    mysql_select_db('u993568510_gl', $connectSQL) or die ("erreur de connexion base");
+	$connectSQL = mysql_connect('...', '...', '...') or die ("erreur de connexion");
+    mysql_select_db('...', $connectSQL) or die ("erreur de connexion base");
 	
 	$SelectSQL = "SELECT * FROM `Personne` WHERE `CleGroupe` = '".$key."'";
 	$objRS = mysql_query ($SelectSQL, $connectSQL);
